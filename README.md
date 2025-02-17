@@ -25,8 +25,6 @@
    - The key can be generated at: [OMDb API Key](https://www.omdbapi.com/apikey.aspx)
 
 
-# Movie Search App
-
 ## Descrição
 O **Movie Search App** é uma aplicação web que permite aos usuários pesquisar informações sobre filmes utilizando uma API externa. Com uma interface intuitiva e responsiva, o app facilita a busca por títulos, detalhes dos filmes e outras informações relevantes.
 
