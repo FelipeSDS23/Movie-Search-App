@@ -1,5 +1,4 @@
-// https://www.omdbapi.com/?i=tt3896198&apikey=fd11d2de
-
+const OMDB_API_KEY = 'ENTER YOUR API KEY - INSIRA SUA CHAVE DE API';
 const movieSearchBox = document.getElementById("movie-search-box");
 const searchList = document.getElementById("search-list");
 const resultGrid = document.getElementById("result-grid");
@@ -9,7 +8,7 @@ movieSearchBox.addEventListener("keyup", findMovies);
 movieSearchBox.addEventListener("click", findMovies);
 
 async function loadMovies(searchTerm){
-    const URL = `https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=fd11d2de`;
+    const URL = `https://www.omdbapi.com/?s=${searchTerm}&page=1&apikey=${OMDB_API_KEY}`;
     const res = await fetch(`${URL}`);
     const data = await res.json();
     if(data.Response === "True") displayMovieList(data.Search);
